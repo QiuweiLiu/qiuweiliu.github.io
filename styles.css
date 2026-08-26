@@ -1,14 +1,14 @@
 /* Qiuwei Liu — Portfolio | Refined for freelance CV clients */
 :root{
-  --bg:#fcfcfc;
-  --bg-alt:#f5f7fb;
-  --card:#ffffff;
-  --text:#0f172a;
-  --muted:#64748b;
-  --line:#e2e8f0;
-  --accent:#2563eb;
-  --accent-soft:#eff6ff;
-  --radius:16px;
+  --bg:#FAF9F5;
+  --bg-alt:#F0EEE9;
+  --card:#FFFFFF;
+  --text:#1F1E1D;
+  --muted:#6B6965;
+  --line:#E5E2DB;
+  --accent:#D97757;
+  --accent-soft:#FBE9E2;
+  --radius:12px;
   --max:1120px;
   --nav-h:56px;
 }
@@ -36,7 +36,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .skip-link:focus{left:12px}
 
 /* Nav */
-.nav{position:sticky;top:0;z-index:20;background:rgba(252,252,252,.92);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.nav{position:sticky;top:0;z-index:20;background:rgba(250,249,245,.92);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
 .nav-inner{max-width:var(--max);margin:0 auto;padding:0 24px;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;gap:16px}
 .nav-brand{font-weight:700;letter-spacing:.02em;color:var(--text);font-size:1.05rem}
 .nav-menu{display:flex;align-items:center;gap:20px}
@@ -46,13 +46,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .nav-toggle span{display:block;width:18px;height:2px;background:var(--text);border-radius:2px}
 
 /* Hero */
-.hero{padding:80px 0 64px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff 0%,#fcfcfc 100%)}
+.hero{padding:80px 0 64px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#FFFFFF 0%,#FAF9F5 100%)}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
 .hero-status{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;color:#065f46;background:#ecfdf5;border:1px solid #a7f3d0;padding:6px 10px;border-radius:999px}
 .dot{width:8px;height:8px;border-radius:50%;background:#10b981;box-shadow:0 0 0 4px rgba(16,185,129,.15)}
 .hero h1{font-size:52px;line-height:1.05;margin:16px 0 8px;letter-spacing:-.03em;font-weight:800}
 .hero-title{font-size:22px;font-weight:650;color:var(--accent);margin:0 0 12px;letter-spacing:-.01em}
-.hero-tagline{font-size:16px;max-width:600px;color:#1e293b;margin:0 0 10px;line-height:1.65}
+.hero-tagline{font-size:16px;max-width:600px;color:#2F2D2A;margin:0 0 10px;line-height:1.65}
 .hero-tech{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--muted);margin:0 0 20px}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-size:.94rem;border:1px solid transparent;cursor:pointer;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease}
@@ -61,7 +61,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .btn-secondary{background:var(--card);border-color:var(--line);color:var(--text)}
 .btn-ghost{background:transparent;border-color:var(--line);color:var(--text)}
 .btn.small{padding:6px 10px;font-size:.84rem}
-.hero-visual{overflow:hidden;border-radius:16px;border:1px solid var(--line);background:#f8fafc;aspect-ratio:16/9}
+.hero-visual{overflow:hidden;border-radius:16px;border:1px solid var(--line);background:#F5F3EF;aspect-ratio:16/9}
 .hero-visual img{width:100%;height:100%;object-fit:cover;display:block}
 
 /* Sections */
@@ -80,23 +80,23 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .card-grid.four{grid-template-columns:repeat(4,1fr)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;transition:transform .15s ease, box-shadow .15s ease}
 .card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(15,23,42,.07)}
-.card-icon{width:36px;height:36px;border-radius:10px;background:var(--accent-soft);border:1px solid #dbeafe;display:flex;align-items:center;justify-content:center;margin-bottom:12px;color:var(--accent)}
+.card-icon{width:36px;height:36px;border-radius:10px;background:var(--accent-soft);border:1px solid #F3D5C8;display:flex;align-items:center;justify-content:center;margin-bottom:12px;color:var(--accent)}
 .card-icon svg{width:18px;height:18px}
 .card h3{font-size:16px;margin:0 0 8px;font-weight:650}
-.card p{margin:0;color:#334155;font-size:14px;line-height:1.6}
+.card p{margin:0;color:#3B3834;font-size:14px;line-height:1.6}
 
 /* Skills hierarchy */
 .skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .chips span{padding:6px 10px;border-radius:999px;font-size:13px;border:1px solid var(--line);background:#fff;color:#1e293b}
-.chips span.core{background:var(--text);color:#fff;border-color:var(--text);font-weight:600}
+.chips span.core{background:#2D2A26;color:#fff;border-color:#2D2A26;font-weight:600}
 .chips span.secondary{color:var(--muted);background:#f8fafc}
 
 /* Projects */
 .project-card{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:22px 0;transition:transform .15s ease, box-shadow .15s ease;align-items:stretch}
 .project-card:hover{transform:translateY(-2px);box-shadow:0 20px 36px rgba(15,23,42,.10)}
-.project-card.featured{border-color:#dbeafe;box-shadow:0 10px 28px rgba(37,99,235,.08)}
-.project-media{background:#f8fafc;display:flex;align-items:stretch;justify-content:stretch;overflow:hidden;min-height:0}
+.project-card.featured{border-color:#F3D5C8;box-shadow:0 10px 28px rgba(217,119,87,.08)}
+.project-media{background:#F5F3EF;display:flex;align-items:stretch;justify-content:stretch;overflow:hidden;min-height:0}
 .project-media.media-video{aspect-ratio:16/9;align-self:start;justify-content:center}
 .project-media img{width:100%;height:100%;object-fit:cover;display:block;flex:1;min-width:0;min-height:0;transition:transform .25s ease}
 .project-media.media-video img{object-fit:contain}
@@ -106,16 +106,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .project-kicker{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0}
 .project-body h3{margin:0;font-size:22px;font-weight:750;letter-spacing:-.01em}
 .project-tech{font-family:ui-monospace,monospace;font-size:12px;color:var(--muted);margin:0}
-.project-pipeline{font-family:ui-monospace,monospace;font-size:12px;color:#475569;margin:0}
+.project-pipeline{font-family:ui-monospace,monospace;font-size:12px;color:#3B3834;margin:0}
 .project-list{margin:0;padding-left:18px;font-size:14px;color:#334155}
 .project-list li{margin:3px 0}
 .project-metrics{display:flex;gap:12px;flex-wrap:wrap;margin:4px 0}
-.metric{background:var(--accent-soft);border:1px solid #dbeafe;padding:10px 14px;border-radius:10px;min-width:140px}
+.metric{background:var(--accent-soft);border:1px solid #F3D5C8;padding:10px 14px;border-radius:10px;min-width:140px}
 .metric strong{display:block;font-size:17px}
 .metric span{font-size:12px;color:var(--muted)}
-.metric-highlight{background:var(--text);color:#fff;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center}
+.metric-highlight{background:#2D2A26;color:#fff;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center}
 .metric-highlight strong{font-size:18px}
-.metric-highlight em{font-style:normal;background:#1d4ed8;color:#fff;padding:4px 8px;border-radius:999px;font-size:13px}
+.metric-highlight em{font-style:normal;background:#D97757;color:#fff;padding:4px 8px;border-radius:999px;font-size:13px}
 .metric-highlight small{color:#cbd5e1;font-size:12px}
 .project-note{font-size:13px;color:var(--muted);margin:0}
 .project-note.small{color:#64748b}
@@ -124,7 +124,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .yolo-switcher img{width:100%;height:100%;object-fit:cover;display:block;flex:1;min-width:0;min-height:0}
 .switcher-tabs{display:flex;gap:6px;padding:8px;background:var(--bg-alt);border-top:1px solid var(--line);flex-shrink:0}
 .switcher-tabs button{flex:1;padding:7px 8px;border:1px solid var(--line);background:#fff;border-radius:8px;font-size:13px;cursor:pointer}
-.switcher-tabs button[aria-selected="true"]{background:var(--text);color:#fff;border-color:var(--text)}
+.switcher-tabs button[aria-selected="true"]{background:#2D2A26;color:#fff;border-color:#2D2A26}
 
 /* Research */
 .research-card{padding:22px}
