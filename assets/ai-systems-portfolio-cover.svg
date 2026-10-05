@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#FAF9F5"/><rect width="1200" height="10" fill="#D97757"/>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#2D2A26">
+<text x="64" y="80" font-size="30" font-weight="700">Qiuwei Liu</text>
+<text x="64" y="199" font-size="62" font-weight="700">AI Systems /</text>
+<text x="64" y="274" font-size="62" font-weight="700">ML Engineering</text>
+<text x="66" y="333" font-size="24" fill="#6B6965">Reproducible research. Practical engineering.</text>
+<rect x="64" y="389" width="348" height="130" rx="14" fill="#FFFFFF" stroke="#E5E2DB"/><rect x="86" y="411" width="7" height="29" rx="3" fill="#D97757"/><text x="108" y="433" font-size="23" font-weight="700">GPU Scheduling</text><text x="86" y="481" font-size="17" fill="#6B6965">Predict → Schedule → Execute</text>
+<rect x="426" y="389" width="348" height="130" rx="14" fill="#FFFFFF" stroke="#E5E2DB"/><rect x="448" y="411" width="7" height="29" rx="3" fill="#D97757"/><text x="470" y="433" font-size="23" font-weight="700">Agent Workflows</text><text x="448" y="481" font-size="17" fill="#6B6965">Plan → Review → Continue</text>
+<rect x="788" y="389" width="348" height="130" rx="14" fill="#FFFFFF" stroke="#E5E2DB"/><rect x="810" y="411" width="7" height="29" rx="3" fill="#D97757"/><text x="832" y="433" font-size="23" font-weight="700">Computer Vision</text><text x="810" y="481" font-size="17" fill="#6B6965">Detect → Track → Analyze</text>
+<text x="64" y="579" font-size="20" fill="#6B6965">Python · PyTorch · Linux · CUDA · FastAPI</text><text x="884" y="579" font-size="20" fill="#D97757">qiuweiliu.github.io</text></g></svg>

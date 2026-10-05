@@ -186,3 +186,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .hero-systems p{margin:4px 0 18px;color:#e6b29f;font-size:13px}
 .hero-systems p:last-child{margin-bottom:0}
 @media(max-width:980px){.hero-visual{order:0;aspect-ratio:auto;min-height:220px}}
+
+/* Compact supporting project; featured cards retain the main visual emphasis. */
+.compact-project{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:22px 0;padding:20px 24px}
+.compact-project .project-kicker{margin:0 0 6px;color:var(--muted);font-size:11px}
+.compact-project h3{font-size:18px;margin:0 0 6px}
+.compact-project .btn{flex-shrink:0}
+@media(max-width:640px){.compact-project{align-items:flex-start;flex-direction:column;gap:14px}}
