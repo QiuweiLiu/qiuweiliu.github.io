@@ -1,13 +1,18 @@
 const translations = {
   en: {
+    schedulerDesc: "Predicting future agent workflows for online GPU placement and ordering, with memory and model-cache constraints, scheduling baselines, and reproducible trace-driven simulation.",
+    agentDesc: "An installable workflow core for reliable long-running AI-assisted research: persistent project state, separate execution and review roles, experiment gates, and context handoffs.",
+    solarDesc: "Low-contrast, small-instance segmentation in full-disk H-alpha solar images under limited GPU memory, with frozen data splits and auditable experiment records.",
+    moreProjects: "More Projects",
+    bridgeDesc: "Attach-only CDP bridge with skill / MCP integration and explicit execution boundaries.",
     skip: "Skip to content",
     navProjects: "Projects",
     navSkills: "Skills",
     navAbout: "About",
     navContact: "Contact",
-    heroStatus: "Open to remote freelance projects",
-    heroTitle: "Computer Vision Engineer",
-    heroTagline: "Building practical computer vision systems — from YOLO model optimization to real-time video analytics.",
+    heroStatus: "Open to remote AI/ML internships",
+    heroTitle: "AI Systems / ML Engineering",
+    heroTagline: "Building reproducible AI systems across GPU scheduling, agent workflows and computer vision.",
     heroBtnProjects: "View Projects",
     heroBtnResume: "Resume",
     helpHeading: "What I Can Help With",
@@ -32,10 +37,10 @@ const translations = {
     help4e: "deployment-oriented integration",
     projectsHeading: "Featured Projects",
     projA2: "Line crossing / ROI / dwell analytics",
-    metricTests: "automated tests passed",
+    metricTests: "tests documented as passing",
     metricFps: "Apple M1 CLI development benchmark",
     projectANote: "FPS is a development benchmark on Apple M1, not a guarantee for every model or deployment.",
-    projectADemo: "Watch Demo",
+    projectADemo: "View GIF Demo",
     projB1: "dataset audit & frozen evaluation split",
     projB6: "small-object bottleneck analysis",
     projB7: "controlled optimization & standardized evaluation",
@@ -52,23 +57,28 @@ const translations = {
     skillsHeading: "Skills",
     aboutHeading: "About",
     aboutRole: "Master's Student in Mechanical Engineering, 2025 – Present. B.Eng. in Vehicle Engineering.",
-    aboutFocus: "Focus: Computer Vision · Video Analytics · GPU Scheduling · AI Systems",
+    aboutFocus: "Focus: AI Systems · GPU Scheduling · Agent Workflows · Computer Vision",
     contactHeading: "Let's build something useful.",
-    contactSub: "Open to remote projects and technical collaboration.",
+    contactSub: "Open to remote AI/ML internships and technical collaboration.",
     contactCopy: "Copy",
     contactResume: "Resume",
     contactResumeLink: "Download PDF",
     footerBuilt: "GitHub"
   },
   zh: {
+    schedulerDesc: "预测 Agent 的未来工作流，用于在线 GPU 分配与执行排序；涵盖显存和模型缓存约束、调度基线与可复现的轨迹驱动仿真。",
+    agentDesc: "面向长期 AI 辅助研究的可安装工作流核心，提供持久化项目状态、独立执行与审查角色、实验检查和上下文交接。",
+    solarDesc: "在有限显存下研究全日面 H-alpha 图像中的低对比度小实例分割，采用固定数据划分并保留可核查的实验记录。",
+    moreProjects: "更多项目",
+    bridgeDesc: "仅连接已有浏览器的 CDP 桥接工具，支持 Skill / MCP 集成，并明确执行边界。",
     skip: "跳到正文",
     navProjects: "项目",
     navSkills: "技能",
     navAbout: "关于",
     navContact: "联系",
-    heroStatus: "可承接远程计算机视觉 / AI 项目",
-    heroTitle: "计算机视觉工程师",
-    heroTagline: "构建可落地的计算机视觉系统 — 从 YOLO 模型优化到实时视频分析。",
+    heroStatus: "寻求远程 AI/ML 实习",
+    heroTitle: "AI 系统 / 机器学习工程",
+    heroTagline: "围绕 GPU 调度、Agent 工作流与计算机视觉，构建可复现的 AI 系统。",
     heroBtnProjects: "查看项目",
     heroBtnResume: "简历",
     helpHeading: "我能帮你做什么",
@@ -93,10 +103,10 @@ const translations = {
     help4e: "面向部署的集成",
     projectsHeading: "精选项目",
     projA2: "越线 / ROI / 驻留分析",
-    metricTests: "项自动化测试通过",
+    metricTests: "项测试已记录通过",
     metricFps: "Apple M1 开发环境 CLI 基准",
     projectANote: "FPS 为 Apple M1 开发环境基准，不代表所有模型与部署环境。",
-    projectADemo: "观看演示",
+    projectADemo: "查看 GIF 演示",
     projB1: "数据集审计与固化评估集",
     projB6: "小目标瓶颈分析",
     projB7: "受控优化与标准化评估",
@@ -113,9 +123,9 @@ const translations = {
     skillsHeading: "技能",
     aboutHeading: "关于",
     aboutRole: "机械工程硕士在读，2025 – 至今，车辆工程学士。",
-    aboutFocus: "方向：计算机视觉 · 视频分析 · GPU 调度 · AI 系统",
+    aboutFocus: "方向：AI 系统 · GPU 调度 · Agent 工作流 · 计算机视觉",
     contactHeading: "一起做点真正有用的东西。",
-    contactSub: "可承接远程计算机视觉项目与技术合作。",
+    contactSub: "寻求远程 AI/ML 实习与技术合作。",
     contactCopy: "复制",
     contactResume: "简历",
     contactResumeLink: "下载 PDF",
@@ -184,11 +194,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Hero resume hide if missing
-  fetch("assets/resume/Qiuwei_Liu_Resume.pdf", {method:"HEAD"}).then(r => {
-    if (!r.ok) document.querySelectorAll(".resume-link, .resume-item").forEach(el => el.style.display="none");
-  }).catch(()=>{});
-
   // Reveal on scroll
   const reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
@@ -212,16 +217,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-
-  // Video modal
-  const modal = document.getElementById("video-modal");
-  const video = modal ? modal.querySelector("video") : null;
-  function openModal(){ if(!modal) return; modal.classList.add("open"); modal.setAttribute("aria-hidden","false"); if(video) video.play().catch(()=>{}); document.body.style.overflow="hidden"; }
-  function closeModal(){ if(!modal) return; modal.classList.remove("open"); modal.setAttribute("aria-hidden","true"); if(video){ video.pause(); video.currentTime=0;} document.body.style.overflow=""; }
-  document.querySelectorAll("[data-modal-open]").forEach(btn=> btn.addEventListener("click", openModal));
-  document.querySelectorAll("[data-modal-close]").forEach(el=> el.addEventListener("click", closeModal));
-  if(modal) modal.addEventListener("click", e=> { if(e.target===modal) closeModal(); });
-  document.addEventListener("keydown", e=> { if(e.key==="Escape" && modal && modal.classList.contains("open")) closeModal(); });
 
   // Simple count-up for metrics (respects reduced-motion)
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

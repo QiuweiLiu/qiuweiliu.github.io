@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Qiuwei Liu | Computer Vision Engineer</title>
-  <meta name="description" content="Computer vision engineer specializing in YOLO optimization, real-time video analytics, object tracking, FastAPI integration, and GPU scheduling.">
+  <title>Qiuwei Liu | AI Systems / ML Engineering</title>
+  <meta name="description" content="MSc student building reproducible AI systems across GPU scheduling, agent workflows and computer vision.">
   <meta name="author" content="Qiuwei Liu">
-  <meta property="og:title" content="Qiuwei Liu | Computer Vision Engineer">
-  <meta property="og:description" content="Computer vision engineer specializing in YOLO optimization, real-time video analytics, and GPU scheduling.">
+  <meta property="og:title" content="Qiuwei Liu | AI Systems / ML Engineering">
+  <meta property="og:description" content="GPU Scheduling · Agent Workflows · Computer Vision. Open to remote AI/ML internships.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/projects/yolo/detection-demo.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Qiuwei Liu | Computer Vision Engineer">
-  <meta name="twitter:description" content="Building practical computer vision systems — from YOLO model optimization to real-time video analytics.">
+  <meta name="twitter:title" content="Qiuwei Liu | AI Systems / ML Engineering">
+  <meta name="twitter:description" content="Building reproducible AI systems across GPU scheduling, agent workflows and computer vision.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◈</text></svg>">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -40,19 +40,18 @@
     <section class="hero" aria-labelledby="hero-heading">
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="hero-status"><span class="dot"></span> <span data-i18n="heroStatus">Open to remote freelance projects</span></p>
+          <p class="hero-status"><span class="dot"></span> <span data-i18n="heroStatus">Open to remote AI/ML internships</span></p>
           <h1 id="hero-heading">Qiuwei Liu</h1>
-          <p class="hero-title" data-i18n="heroTitle">Computer Vision Engineer</p>
-          <p class="hero-tagline" data-i18n="heroTagline">Building practical computer vision systems — from YOLO model optimization to real-time video analytics.</p>
-          <p class="hero-tech">YOLO · Video Analytics · Object Tracking · Python / PyTorch</p>
+          <p class="hero-title" data-i18n="heroTitle">AI Systems / ML Engineering</p>
+          <p class="hero-tagline" data-i18n="heroTagline">Building reproducible AI systems across GPU scheduling, agent workflows and computer vision.</p>
+          <p class="hero-tech">GPU Scheduling · Agent Workflows · Computer Vision</p>
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary" data-i18n="heroBtnProjects">View Projects</a>
             <a href="https://github.com/QiuweiLiu" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
-            <a href="assets/resume/Qiuwei_Liu_Resume.pdf" target="_blank" class="btn btn-secondary resume-link" data-i18n="heroBtnResume">Resume</a>
           </div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <img src="assets/projects/video-analytics/dashboard.jpg" alt="Real-time video analytics dashboard" loading="eager">
+        <div class="hero-visual system-media">
+          <div class="hero-systems"><strong>Predict → Schedule → Execute</strong><p>GPU Scheduling</p><strong>Plan → Review → Continue</strong><p>Agent Workflows</p><strong>Detect → Track → Analyze</strong><p>Computer Vision</p></div>
         </div>
       </div>
     </section>
@@ -61,6 +60,37 @@
     <section id="projects" class="section section-alt">
       <div class="container">
         <h2 class="reveal" data-i18n="projectsHeading">Featured Projects</h2>
+
+        <article class="project-card featured reveal">
+          <div class="project-media system-media"><pre class="system-diagram">Agent request
+      ↓
+Future-workflow predictor
+      ↓
+Scheduler ← GPU state
+      ↓
+GPU assignment / execution order</pre></div>
+          <div class="project-body">
+            <p class="project-kicker">AI Systems / GPU Scheduling</p><h3>Forecast-Aware GPU Scheduler</h3>
+            <p class="project-tech">Python · Discrete-Event Simulation · Prediction · CP-SAT</p>
+            <p data-i18n="schedulerDesc">Predicting future agent workflows for online GPU placement and ordering, with memory and model-cache constraints, scheduling baselines, and reproducible trace-driven simulation.</p>
+            <div class="project-actions"><a href="https://github.com/QiuweiLiu/scheduler" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a></div>
+          </div>
+        </article>
+        <article class="project-card featured reveal">
+          <div class="project-media system-media"><pre class="system-diagram">User goal → research-lead
+               ↓
+   scout · runner · reviewer · auditor
+               ↓
+        Project state / HANDOFF
+               ↓
+          Next session</pre></div>
+          <div class="project-body">
+            <p class="project-kicker">Agent Engineering / Developer Tools</p><h3>Research Agent OS</h3>
+            <p class="project-tech">Project State · Role Separation · Experiment Gates</p>
+            <p data-i18n="agentDesc">An installable workflow core for reliable long-running AI-assisted research: persistent project state, separate execution and review roles, experiment gates, and context handoffs.</p>
+            <div class="project-actions"><a href="https://github.com/QiuweiLiu/research-agent-os" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a></div>
+          </div>
+        </article>
 
         <!-- Project A : Video Analytics -->
         <article class="project-card featured reveal">
@@ -78,16 +108,38 @@
               <li>FastAPI backend + Dashboard</li>
             </ul>
             <div class="project-metrics">
-              <div class="metric"><strong data-count="37">37</strong><span data-i18n="metricTests">automated tests passed</span></div>
-              <div class="metric"><strong>~18.9 FPS</strong><span data-i18n="metricFps">Apple M1 CLI development benchmark</span></div>
+              <div class="metric"><strong data-count="46">46</strong><span data-i18n="metricTests">tests documented as passing</span></div>
             </div>
             <div class="project-actions">
               <a href="https://github.com/QiuweiLiu/real-time-video-analytics" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
-              <button class="btn btn-ghost" data-modal-open="video-modal" data-i18n="projectADemo">Watch Demo</button>
+              <a href="assets/projects/video-analytics/demo.gif" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="projectADemo">View GIF Demo</a>
             </div>
           </div>
         </article>
 
+        <article class="project-card featured reveal">
+          <div class="project-media system-media"><pre class="system-diagram">H-alpha full-disk image
+          ↓
+    CLAHE / tiled U-Net
+          ↓
+  Mask + auxiliary heads
+          ↓
+Instance decoding / evaluation</pre></div>
+          <div class="project-body">
+            <p class="project-kicker">PyTorch / Computer Vision Research</p><h3>Solar Filament Segmentation</h3>
+            <p class="project-tech">PyTorch · Tiled U-Net · Auxiliary Heads · Instance Segmentation</p>
+            <p data-i18n="solarDesc">Low-contrast, small-instance segmentation in full-disk H-alpha solar images under limited GPU memory, with frozen data splits and auditable experiment records.</p>
+            <div class="project-actions"><a href="https://github.com/QiuweiLiu/solar-filament-segmentation-2026" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="more-projects" class="section">
+      <div class="container">
+        <h2 class="reveal" data-i18n="moreProjects">More Projects</h2>
+        <p><a href="https://github.com/QiuweiLiu/chatgpt-web-bridge">ChatGPT Web Bridge</a> — <span data-i18n="bridgeDesc">Attach-only CDP bridge with skill / MCP integration and explicit execution boundaries.</span></p>
         <!-- Project B : YOLO Portfolio -->
         <article class="project-card featured reveal">
           <div class="project-media">
@@ -124,48 +176,14 @@
       </div>
     </section>
 
-    <!-- What I Can Help With (after projects) -->
-    <section id="help" class="section">
-      <div class="container">
-        <h2 class="reveal" data-i18n="helpHeading">What I Can Help With</h2>
-        <p class="section-intro reveal" data-i18n="helpIntro">Hire me to turn detection requirements into reliable, measurable systems.</p>
-        <div class="card-grid four">
-          <article class="card reveal"><h3 data-i18n="help1Title">YOLO Training & Optimization</h3><ul><li data-i18n="help1a">custom dataset training</li><li data-i18n="help1b">detection performance optimization</li><li data-i18n="help1c">small-object detection</li><li data-i18n="help1d">model evaluation</li></ul></article>
-          <article class="card reveal"><h3 data-i18n="help2Title">Detection Debugging</h3><ul><li data-i18n="help2a">false positive / false negative analysis</li><li data-i18n="help2b">dataset diagnosis</li><li data-i18n="help2c">class imbalance</li><li data-i18n="help2d">error analysis</li></ul></article>
-          <article class="card reveal"><h3 data-i18n="help3Title">Video Analytics</h3><ul><li>YOLO + tracking</li><li data-i18n="help3b">line crossing</li><li data-i18n="help3c">ROI analytics</li><li data-i18n="help3d">dwell detection</li><li data-i18n="help3e">event generation</li></ul></article>
-          <article class="card reveal"><h3 data-i18n="help4Title">Video System Integration</h3><ul><li>RTSP</li><li>FastAPI</li><li>REST APIs</li><li data-i18n="help4d">video pipelines</li><li data-i18n="help4e">deployment-oriented integration</li></ul></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Research secondary -->
-    <section id="research" class="section section-alt">
-      <div class="container">
-        <h2 class="reveal" data-i18n="researchHeading">Research / Systems</h2>
-        <article class="card research-card reveal">
-          <h3>Video-Agent Multi-GPU Scheduling</h3>
-          <p class="project-tech">Python · DAG Scheduling · Optimization · Reinforcement Learning</p>
-          <p data-i18n="researchDesc">Online scheduling research for dynamic Video-Agent DAG workloads with GPU memory, model caching, deadlines and limited-future prediction.</p>
-          <div class="research-metrics">
-            <div><strong data-count="1000">1,000</strong><span>validation episodes</span></div>
-            <div><strong data-count="34160">34,160</strong><span>jobs</span></div>
-            <div><strong>0</strong><span data-i18n="researchFailed">failed jobs</span></div>
-            <div><strong>0</strong><span>GPU capacity violations</span></div>
-          </div>
-          <p class="research-compare">PredOpt-H5 vs Myopic: ~2.1% lower avg completion, miss 10.98% → 10.47%</p>
-          <p class="research-note" data-i18n="researchNote">Presented as research / experimental systems work, not a production scheduler.</p>
-        </article>
-      </div>
-    </section>
-
     <!-- Skills -->
     <section id="skills" class="section">
       <div class="container">
         <h2 class="reveal" data-i18n="skillsHeading">Skills</h2>
         <div class="skills-grid">
-          <div class="reveal"><h3>Computer Vision</h3><div class="chips"><span>YOLO</span><span>Ultralytics</span><span>OpenCV</span><span>ByteTrack</span><span>Object Detection</span><span>Multi-Object Tracking</span><span>Video Analytics</span></div></div>
-          <div class="reveal"><h3>Machine Learning</h3><div class="chips"><span>PyTorch</span><span>Reinforcement Learning</span><span>PPO</span><span>Model Evaluation</span><span>Experimental Design</span></div></div>
-          <div class="reveal"><h3>Backend & Video</h3><div class="chips"><span>FastAPI</span><span>REST API</span><span>RTSP</span><span>Video Processing</span><span>Event Processing</span></div></div>
+          <div class="reveal"><h3>AI Systems / GPU</h3><div class="chips"><span>GPU Scheduling</span><span>Discrete-Event Simulation</span><span>Model Caching</span><span>CP-SAT</span></div></div>
+          <div class="reveal"><h3>Machine Learning</h3><div class="chips"><span>PyTorch</span><span>Prediction</span><span>Computer Vision</span><span>YOLO</span><span>U-Net</span><span>Model Evaluation</span><span>Experimental Design</span></div></div>
+          <div class="reveal"><h3>Agents / Backend</h3><div class="chips"><span>FastAPI</span><span>REST API</span><span>RTSP</span><span>Agent Workflows</span><span>MCP / CDP</span><span>Project Continuity</span></div></div>
           <div class="reveal"><h3>Engineering</h3><div class="chips"><span>Python</span><span>Git / GitHub</span><span>Linux</span><span>Conda</span><span>Pytest</span><span>CUDA</span><span>Apple Silicon MPS</span><span>Reproducible Experiments</span></div></div>
         </div>
       </div>
@@ -176,7 +194,7 @@
       <div class="container narrow reveal">
         <h2 data-i18n="aboutHeading">About</h2>
         <p><strong>South China University of Technology</strong> — <span data-i18n="aboutRole">Master's Student in Mechanical Engineering, 2025 – Present. B.Eng. in Vehicle Engineering.</span></p>
-        <p data-i18n="aboutFocus">Focus: Computer Vision · Video Analytics · GPU Scheduling · AI Systems</p>
+        <p data-i18n="aboutFocus">Focus: AI Systems · GPU Scheduling · Agent Workflows · Computer Vision</p>
       </div>
     </section>
 
@@ -184,7 +202,7 @@
     <section id="contact" class="section">
       <div class="container narrow reveal">
         <h2 data-i18n="contactHeading">Let's build something useful.</h2>
-        <p class="contact-sub" data-i18n="contactSub">Open to remote projects and technical collaboration.</p>
+        <p class="contact-sub" data-i18n="contactSub">Open to remote AI/ML internships and technical collaboration.</p>
         <div class="contact-grid">
           <div class="contact-item">
             <span>Email</span>
@@ -194,10 +212,6 @@
           <div class="contact-item">
             <span>GitHub</span>
             <a href="https://github.com/QiuweiLiu" target="_blank" rel="noopener">github.com/QiuweiLiu</a>
-          </div>
-          <div class="contact-item resume-item">
-            <span data-i18n="contactResume">Resume</span>
-            <a href="assets/resume/Qiuwei_Liu_Resume.pdf" target="_blank" data-i18n="contactResumeLink">Download PDF</a>
           </div>
         </div>
       </div>
@@ -209,15 +223,6 @@
       <p>© 2026 <a href="https://github.com/QiuweiLiu">Qiuwei Liu</a></p>
     </div>
   </footer>
-
-  <!-- Video modal -->
-  <div id="video-modal" class="modal" aria-hidden="true" role="dialog" aria-label="Demo video">
-    <div class="modal-backdrop" data-modal-close></div>
-    <div class="modal-content">
-      <button class="modal-close" aria-label="Close" data-modal-close>×</button>
-      <video src="assets/projects/video-analytics/demo.mp4" controls playsinline></video>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>

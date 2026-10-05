@@ -1,77 +1,30 @@
 # Qiuwei Liu — Portfolio Website
 
-Personal portfolio for **Qiuwei Liu — Computer Vision Engineer** (`YOLO · Video Analytics · Python / PyTorch`).
+Personal portfolio for **AI Systems / ML Engineering**: GPU Scheduling · Agent Workflows · Computer Vision.
 
-Live: `https://qiuweiliu.github.io` (GitHub Pages, `main` branch, `/` root)
+Live: [qiuweiliu.github.io](https://qiuweiliu.github.io/)
 
-## File structure
+## Project order
 
-```
-qiuweiliu.github.io/
-├── index.html
-├── styles.css
-├── script.js
-├── README.md
-└── assets/
-    ├── projects/
-    │   ├── video-analytics/
-    │   │   ├── dashboard.jpg  (add screenshot)
-    │   │   └── demo.mp4       (add demo video)
-    │   └── yolo/
-    │       ├── detection-demo.jpg
-    │       └── fp-fn-example.jpg
-    ├── icons/                 (optional)
-    └── resume/
-        └── Qiuwei_Liu_Resume.pdf  (place your PDF here)
-```
+Forecast-Aware GPU Scheduler → Research Agent OS → Real-Time Video Analytics → Solar Filament Segmentation. ChatGPT Web Bridge and YOLO Optimization Portfolio appear under More Projects.
 
-## Preview locally
+## Edit and preview
 
-No build step. Just open `index.html` directly in a browser, or:
+- `index.html`: project cards, links, page metadata.
+- `script.js`: English / Chinese translations and interactions.
+- `styles.css`: responsive layout and presentation.
+- `assets/projects/`: existing Video Analytics and YOLO demo images.
 
-```bash
-# Python 3
-python -m http.server 8000
-# then open http://localhost:8000
-```
+No build step or external runtime dependencies. Preview with `python -m http.server 8000`, then open `http://localhost:8000`.
 
-## Deploy to GitHub Pages
+## GitHub Pages
 
-1. Repository must be named `qiuweiliu.github.io` under user `QiuweiLiu`
-2. Push to `main` branch
-3. GitHub → Settings → Pages → Source: `Deploy from a branch`, Branch: `main`, Folder: `/ (root)`
-4. Wait ~1 minute, visit `https://qiuweiliu.github.io`
+Published from `main`, repository root. Pushing website changes triggers the existing Pages deployment.
 
-## How to update screenshots
+## Content maintenance
 
-- Video Analytics dashboard: replace `assets/projects/video-analytics/dashboard.jpg` (recommended 1600×900, JPG)
-- YOLO demo: replace `assets/projects/yolo/detection-demo.jpg` and `fp-fn-example.jpg`
-- Keep images < 500 KB for fast loading (export JPG quality 80–85)
+Update both languages when editing text with `data-i18n`. The language switch stores the preference in `portfolio-lang`.
 
-## How to add resume
+The video demo links to the committed GIF. Resume download buttons are omitted until a current PDF is available; add the file and verify its URL before restoring them.
 
-Place PDF at `assets/resume/Qiuwei_Liu_Resume.pdf`. The “Resume” buttons in Hero and Contact link there. If missing, the link will 404 — add a note in `index.html` if you prefer.
-
-## How to replace placeholders
-
-- Email: search `YOUR_EMAIL_HERE` in `index.html` and `script.js` (`data-copy`)
-- LinkedIn: search `YOUR_LINKEDIN_URL_HERE` in `index.html`
-- Demo video: add MP4 to `assets/projects/video-analytics/demo.mp4` and update the “View Demo” link if needed
-
-## Bilingual switching
-
-- Button `EN / 中文` in nav toggles instantly, no reload
-- Uses `localStorage` key `portfolio-lang`
-- Translations are in `script.js` → `translations` object
-- To edit copy, change that object only — no duplicated HTML
-
-## How to change project content later
-
-- Edit `index.html` project cards (keep class names, just change text)
-- Update `script.js` translations for both `en` and `zh` keys
-- Keep technology names (YOLO, ByteTrack, etc.) in English per spec
-
-## Accessibility & performance
-
-- Semantic HTML, keyboard nav, visible focus, alt text, reduced-motion support
-- No external dependencies, no build tools
+The Video Analytics test count reflects the project README, not a new local test run. Scheduler results and experimental boundaries remain in its research repository.
