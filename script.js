@@ -1,5 +1,6 @@
 const translations = {
   en: {
+    metricDistinction: "Diagnostic TP/FP/FN statistics are used for failure analysis and may differ from COCO-style AP evaluation.",
     schedulerDesc: "Predicting future agent workflows for online GPU placement and ordering, with memory and model-cache constraints, scheduling baselines, and reproducible trace-driven simulation.",
     agentDesc: "An installable workflow core for reliable long-running AI-assisted research: persistent project state, separate execution and review roles, experiment gates, and context handoffs.",
     solarDesc: "Low-contrast, small-instance segmentation in full-disk H-alpha solar images under limited GPU memory, with frozen data splits and auditable experiment records.",
@@ -66,6 +67,7 @@ const translations = {
     footerBuilt: "GitHub"
   },
   zh: {
+    metricDistinction: "TP/FP/FN 诊断统计用于错误分析，与 COCO 风格的 AP 评估口径可能不同。",
     schedulerDesc: "预测 Agent 的未来工作流，用于在线 GPU 分配与执行排序；涵盖显存和模型缓存约束、调度基线与可复现的轨迹驱动仿真。",
     agentDesc: "面向长期 AI 辅助研究的可安装工作流核心，提供持久化项目状态、独立执行与审查角色、实验检查和上下文交接。",
     solarDesc: "在有限显存下研究全日面 H-alpha 图像中的低对比度小实例分割，采用固定数据划分并保留可核查的实验记录。",
